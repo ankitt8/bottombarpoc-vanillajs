@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bottom Navigation</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    @font-face {
+      font-family: Roboto;
+      font-weight: 400;
+      font-style: normal;
+      font-display: swap;
+      src: local("Roboto Regular"), local("Roboto-Regular"), local("Roboto"), local("sans-serif"), url(https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/fonts/roboto-regular.woff2) format("woff2"), url(https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/fonts/roboto-regular.woff) format("woff"), url(https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/fonts/roboto-regular.ttf) format("truetype")
+    }
+
+    @font-face {
+      font-family: Roboto;
+      font-weight: 500;
+      font-style: normal;
+      font-display: swap;
+      src: local("Roboto Medium"), local("Roboto-Medium"), local("Roboto"), local("sans-serif-medium"), url(https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/fonts/roboto-medium.woff2) format("woff2"), url(https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/fonts/roboto-medium.woff) format("woff"), url(https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/fonts/roboto-medium.ttf) format("truetype")
+    }
+
+    @font-face {
+      font-family: NotoSansDevanagari;
+      font-weight: 400;
+      font-style: normal;
+      font-display: swap;
+      src: local("NotoSansDevanagari Regular"), local("NotoSansDevanagari-Regular"), local("NotoSansDevanagari"), local("sans-serif"), url(https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/fonts/NotoSansDevanagariUI-Regular.ttf) format("truetype")
+    }
+
+    @font-face {
+      font-family: NotoSansDevanagari;
+      font-weight: 500;
+      font-style: normal;
+      font-display: swap;
+      src: local("NotoSansDevanagari Medium"), local("NotoSansDevanagari-Medium"), local("NotoSansDevanagari"), local("sans-serif-medium"), url(https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/fonts/NotoSansDevanagariUI-Medium.ttf) format("truetype")
+    }
+
+    @font-face {
+      font-family: NotoSansDevanagari-Medium;
+      font-style: normal;
+      font-display: swap;
+      src: local("NotoSansDevanagari Medium"), local("NotoSansDevanagari-Medium"), local("NotoSansDevanagari"), local("sans-serif-medium"), url(https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/fonts/NotoSansDevanagariUI-Medium.ttf) format("truetype")
+    }
+
+    @font-face {
+      font-family: inter_regular;
+      font-weight: 400;
+      font-style: normal;
+      font-display: swap;
+      src: local("Inter"), url(https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/fonts/Inter-Regular.woff2) format("woff2"), url(https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/fonts/Inter-Regular.woff) format("woff"), url(https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/fonts/Inter-Regular.ttf) format("truetype")
+    }
+
+    @font-face {
+      font-family: inter_semi_bold;
+      font-weight: 600;
+      font-style: normal;
+      font-display: swap;
+      src: url(https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/fonts/Inter-SemiBold.woff2) format("woff2"), url(https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/fonts/Inter-SemiBold.woff) format("woff"), url(https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/fonts/Inter-SemiBold.ttf) format("truetype")
+    }
+
+    @font-face {
+      font-family: fallback-inter_regular;
+      font-weight: 400;
+      ascent-override: 90.2%;
+      descent-override: 22.48%;
+      line-gap-override: 0;
+      size-adjust: 107.4%;
+      src: local("Arial")
+    }
+
+    @font-face {
+      font-family: fallback-inter_semi_bold;
+      font-weight: 600;
+      ascent-override: 92.2%;
+      descent-override: 19%;
+      line-gap-override: 0;
+      size-adjust: 109.2%;
+      src: local("Arial")
+    }
+
+    body,
+    button,
+    input,
+    select,
+    textarea {
+      font-family: Arial, sans-serif;
+      letter-spacing: -.2px
+    }
+  </style>
+</head>
+
+<body>
+  <div id="content">
+
+    <ul id="historyList">
+
+    </ul>
+  </div>
+  <div class="bottom-nav">
+    <div class="tab" id="homeTab" data-path="/">Home</div>
+    <div class="tab" id="categoriesTab" data-path="/categories">Categories</div>
+    <div class="tab" id="cartTab" data-path="/cart">Cart</div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,127 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+button {
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+#content {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+    overflow-y: auto;
+}
+.entry {
+    margin: 10px 0;
+    font-size: 16px;
+}
+.key {
+    font-weight: bold;
+    margin-right: 5px;
+}
+.header {
+    background: yellow;
+    padding: 5px;
+}
+ul {
+    list-style: none;
+    padding: 0;
+}
+h3 {
+    margin: 0;
+}
+li {
+    padding: 5px 0;
+    border-bottom: 1px solid #ccc;
+    margin: 10px 0;
+}
+.section {
+    margin-bottom: 20px;
+}
+.section h3 {
+    margin: 0 0 10px;
+}
+.url-list {
+    list-style: none;
+    padding: 0;
+}
+.url-list li {
+    padding: 5px 0;
+    border-bottom: 1px solid #ccc;
+}
+.bottom-nav {
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: #eee;
+    border-top: 1px solid #ccc;
+}
+.tab {
+    padding: 15px;
+    cursor: pointer;
+    text-align: center;
+    flex: 1;
+}
+.tab.active {
+    background: #ddd;
+    font-weight: bold;
+}
+.bottom-nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    background: #ffffff;
+    border-top: 2px solid #f0f0f0;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.tab {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    padding: 10px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+    color: #555555;
+    transition: all 0.3s ease;
+}
+
+.tab.active {
+    color: #007bff; /* Highlighted color for active tab */
+    font-weight: bold;
+}
+
+.tab:hover {
+    background-color: #f9f9f9;
+    color: #007bff;
+    transition: all 0.3s ease;
+}
+
+.tab svg {
+    margin-bottom: 4px;
+    width: 24px;
+    height: 24px;
+    fill: currentColor; /* Matches text color */
+}
+
+.tab.active svg {
+    fill: #007bff; /* Highlighted icon color for active tab */
+}
